@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="GenderEqualizer.Views.femaleperspective2xaml"
+             BackgroundColor="Blue"
+             >
+    <ScrollView>
+        <StackLayout>
+
+
+        <Label  Text=" Question" FontSize="Large" TextColor="Black"/>
+        <Label Text=" which characteristic is associated with a feminise ?" TextColor="White" FontSize="Medium"/>
+        <Label Text=" 1. passive , aggressive" TextColor="White" FontSize="Medium"/>
+        <Label Text=" 2. loud , domineering " TextColor="white" FontSize="Medium"/>
+        <Label Text=" 3. Love , caring  " TextColor="White" FontSize="Medium"/>
+
+        <Image Source="Cartoon.jpg"/>
+
+
+        <Button Text="answer 1 " CornerRadius="30"/>
+        <Button Text="answer 2 " CornerRadius="30"/>
+        <Button Text="answer 3 " CornerRadius="30"/>
+            <Button Text="Next " Command="{Binding FeministSide}" CornerRadius="30"/>
+       
+
+
+
+
+
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

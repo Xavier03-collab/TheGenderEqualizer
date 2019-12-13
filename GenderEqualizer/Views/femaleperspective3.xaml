@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="GenderEqualizer.Views.femaleperspective3"
+             BackgroundColor="BlueViolet"
+             >
+
+    <ScrollView>
+        <StackLayout>
+
+
+        <Label  Text=" Question" FontSize="Large" TextColor="Black"/>
+        <Label Text=" does society accept feminist thinking  " TextColor="Black" FontSize="Medium"/>
+        <Label Text=" 1. yes " TextColor="Black" FontSize="Medium"/>
+        <Label Text=" 2. no" TextColor="Black" FontSize="Medium"/>
+        <Label Text=" 3. its accepted but not respected " TextColor="Black" FontSize="Medium"/>
+
+        <Image Source="sandwichmemes.jpg"/>
+
+
+        <Button Text="answer 1 " CornerRadius="30"/>
+        <Button Text="answer 2 " CornerRadius="30"/>
+        <Button Text="answer 3 " CornerRadius="30"/>
+            <Button Text="Next " Command="{Binding HerPov}" CornerRadius="30"/>
+
+
+    </StackLayout>
+        
+    </ScrollView>
+</ContentPage>

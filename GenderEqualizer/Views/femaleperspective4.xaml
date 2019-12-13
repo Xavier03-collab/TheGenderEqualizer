@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="GenderEqualizer.Views.femaleperspective4"
+             BackgroundColor="Purple"
+             >
+    <ScrollView>
+        <StackLayout>
+
+
+        <Label  Text=" Question" FontSize="Large" TextColor="Black"/>
+        <Label Text=" is society ready to be lead by a woman  ?" TextColor="Black" FontSize="Medium"/>
+        <Label Text=" 1. yes" TextColor="Black" FontSize="Medium"/>
+        <Label Text=" 2. no , domineering " TextColor="Black" FontSize="Medium"/>
+        <Label Text=" 3. Alot will change  " TextColor="Black" FontSize="Medium"/>
+
+        <Image Source="muchbetter.jpg "/>
+
+
+        <Button Text="answer 1 " CornerRadius="30"/>
+        <Button Text="answer 2 " CornerRadius="30"/>
+        <Button Text="answer 3 " CornerRadius="30"/>
+            <Button Text="Next " Command="{Binding NextCommand}" CornerRadius="30"/>
+
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

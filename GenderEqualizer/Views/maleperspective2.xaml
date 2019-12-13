@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="GenderEqualizer.Views.maleperspective2"
+             BackgroundColor="Yellow"
+             >
+
+    <ScrollView>
+        <StackLayout>
+
+
+            <Label  Text=" Question" FontSize="Large" TextColor="Black"/>
+            <Label Text=" Do you think a chauvanistic male can show his emotions   ?" TextColor="Black" FontSize="Medium"/>
+            <Label Text=" 1.No because it would be seen as unmanly " TextColor="Black" FontSize="Medium"/>
+            <Label Text=" 2.No because a strong leader has to remain strong   " TextColor="Black" FontSize="Medium"/>
+            <Label Text=" 3 yes because they are still human beings  " TextColor="Black" FontSize="Medium"/>
+
+
+            <Image Source="malecartoon.png "/>
+
+            <Button Text="answer 1 " CornerRadius="30"/>
+            <Button Text="answer 2 " CornerRadius="30"/>
+            <Button Text="answer 3 " CornerRadius="30"/>
+            <Button Text="Next " Command="{Binding NextCommand}" CornerRadius="30"/>
+
+        </StackLayout>
+
+    </ScrollView>
+
+
+
+
+</ContentPage>
